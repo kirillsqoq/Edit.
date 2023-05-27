@@ -25,7 +25,6 @@ export const useStore = create((set) => ({
 	setSelectedRatio: (value) => set((state) => ({ selectedRatio: value })),
 	setSelectedCropMode: (value) =>
 		set((state) => ({ selectedCropMode: value })),
-
 	dropPhotoUpdate: () =>
 		set((state) => ({ isDroppedPhoto: !state.isDroppedPhoto })),
 	setImgUrl: (url) => set((state) => ({ imgUrl: url })),
@@ -42,11 +41,9 @@ export const useStore = create((set) => ({
 	setZoomIn: () => set((state) => ({ zoom: state.zoom + 0.1 })),
 	setZoomOut: () => set((state) => ({ zoom: state.zoom - 0.1 })),
 	setZoom: (value) => set((state) => ({ zoom: value })),
-
 	setResetSnapFalse: () => set((state) => ({ resetSnap: false })),
 	setResetSnapTrue: () => set((state) => ({ resetSnap: true })),
 	setScale: (scale) => set((state) => ({ scale: scale })),
-
 	setReset: () =>
 		set((state) => ({
 			blur: 0,
